@@ -1,0 +1,117 @@
+<html>
+<head>		
+<style>
+	body{
+		background: black;
+		overflow: hidden;
+	}
+	#container{
+		font-family:Helvetica ;
+		width:500px;
+		height:600px; 
+		margin-left: 400px;
+		margin-top: 60px;
+		text-align: center;
+		
+
+	}
+	
+	#cel2,#cel5,#cel6,#cel8,#cel4{  /**/
+		max-width: 150px;
+
+		font-size: 100px;
+		width:150px;  
+		background: white;
+		
+		height: 150px;
+		float:left;
+	}
+	#cel1{  /**/
+		width:150px;  
+		height: 150px;
+		background: white;
+		font-size: 100px;
+		border-top-left-radius:10px;
+		float:left; 
+
+	}
+	#cel3{  /**/
+		font-size: 100px;
+		width:150px;  
+		height: 150px;
+		background: white;
+		
+		border-top-right-radius:10px;
+		float:left;
+	}
+	#cel9{  /**/
+		font-size: 100px;
+		width:150px;  
+		height: 150px;
+		background: white;
+		
+		border-bottom-right-radius:10px;
+		float:left;
+	}
+	#cel7{  /**/
+		font-size: 100px;
+		width:150px;  
+		height: 150px;
+		background: white;
+		border-bottom-left-radius:10px;
+		float:left;
+	}
+	#cel2,#cel5,#cel6,#cel8,#cel4,#cel1,#cel3,#cel7,#cel9{
+
+		margin-right:2px
+	}
+#replay{
+	color:whitesmoke;
+	//float:right;
+	width: 30px;
+	height: 30px;
+}
+#replay:hover{
+	color:red;
+}
+
+#sc{
+	display:none;
+}
+</style>
+</head>
+
+<body>
+
+<div id="container">
+		<h1 id="replay"><a  herf="#" onclick="replay()">restart</a></h1>
+		<h2 id="sc" style="color:whitesmoke;">asdasd</h2>
+	<div id="Box1" style="height: 153px;">
+		<div id="cel1" ></div>
+		<div id="cel2"></div>
+		<div id="cel3"></div>
+	</div>
+	<div id="Box2" style="height: 153px">
+		<div id="cel4"></div>
+		<div id="cel5"></div>
+		<div id="cel6"></div>
+	</div>
+	<div id="Box3" style="height: 153px">
+		<div id="cel7"></div>
+		<div id="cel8"></div>
+		<div id="cel9"></div>
+	</div>		
+</div>
+
+</body>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+	</script>
+	<script>
+	$SCRIPT_ROOT = " ";
+	</script>
+	 
+		<script type=text/javascript src="{{
+			url_for('static', filename='f.js') }}"></script>
+</html>
